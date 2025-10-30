@@ -1,33 +1,24 @@
-import { api } from "@/convex/_generated/api";
-import useTheme from "@/hooks/useTheme";
-import { useQuery } from "convex/react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { createHomeStyles } from "@/assets/styles/home.styles";
+import useTheme, { ColorScheme } from "@/hooks/useTheme";
+import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
-  const { toggleDarkMode } = useTheme();
-  const todos = useQuery(api.todos.getTodos)
-  console.log(todos);
+  const { toggleDarkMode, colors } = useTheme();
+
+  const homeStyles = createHomeStyles(colors)
+
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "red",
-      }}
-    >
-      <Text style={styles.text}>Welcome to my application</Text>
-      <TouchableOpacity
-      onPress={toggleDarkMode}
-      >
-        <Text>Click</Text>
-      </TouchableOpacity>
-    </View>
+    <LinearGradient colors={colors.gradients.background} style={homeStyles.container}>
+      <StatusBar barStyle={colors.statusBarStyle}/>
+      <SafeAreaView style={homeStyles.container}>
+        <TouchableOpacity
+          onPress={toggleDarkMode}
+        >
+          <Text>Click</Text>
+        </TouchableOpacity>
+      </SafeAreaView>
+    </LinearGradient>
   );
 }
-
-const styles = StyleSheet.create({
-  text: {
-    color: "white"
-  }
-})
