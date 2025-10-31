@@ -3,6 +3,7 @@ import useTheme, { ColorScheme } from "@/hooks/useTheme";
 import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Header from "@/components/Header";
 
 export default function Index() {
   const { toggleDarkMode, colors } = useTheme();
@@ -13,6 +14,7 @@ export default function Index() {
     <LinearGradient colors={colors.gradients.background} style={homeStyles.container}>
       <StatusBar barStyle={colors.statusBarStyle}/>
       <SafeAreaView style={homeStyles.container}>
+        <Header />
         <TouchableOpacity
           onPress={toggleDarkMode}
         >

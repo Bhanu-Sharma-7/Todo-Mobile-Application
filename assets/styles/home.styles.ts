@@ -31,12 +31,13 @@ export const createHomeStyles = (colors: ColorScheme) => {
       marginBottom: 20,
     },
     iconContainer: {
-      width: 56,
-      height: 56,
+      width: 60,
+      height: 60,
       borderRadius: 16,
       justifyContent: "center",
       alignItems: "center",
       marginRight: 16,
+      marginTop: 6,
     },
     titleTextContainer: {
       flex: 1,
