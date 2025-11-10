@@ -22,10 +22,10 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="/assets/images/1.jpg" width="28%" />
-  <img src="/assets/images/2.jpg" width="28%" />
-  <img src="/assets/images/3.jpg" width="28%" />
-  <img src="/assets/images/4.jpg" width="28%" />
+  <img src="/assets/images/1.jpg" width="25%" />
+  <img src="/assets/images/2.jpg" width="25%" />
+  <img src="/assets/images/3.jpg" width="25%" />
+  <img src="/assets/images/4.jpg" width="25%" />
 </div>
 
 ---
