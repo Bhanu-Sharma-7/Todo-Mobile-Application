@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+<h1 align="center">📱 React Native To-Do App</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  A real-time To-Do application built using <b>React Native + Expo</b> and <b>Convex</b>.  
+  Fully synced across devices with smooth UI, instant updates, and intuitive features.
+</p>
 
-## Get started
+---
 
-1. Install dependencies
+## 🎯 Features
 
-   ```bash
-   npm install
-   ```
+- ✅ Add, edit, complete & delete tasks  
+- ⚡ Real-time sync using Convex  
+- 🌙 Light & Dark Mode toggle  
+- 📊 Task stats (total, completed, pending)  
+- 🔁 Auto-sync & notification toggles (UI only)  
+- 🧭 Tab + Stack navigation  
+- 📱 Runs on Android, iOS, and Web  
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📸 Screenshots
 
-In the output, you'll find options to open the app in a
+<div align="center">
+  <img src="/assets/images/1.jpg" width="28%" />
+  <img src="/assets/images/2.jpg" width="28%" />
+  <img src="/assets/images/3.jpg" width="28%" />
+  <img src="/assets/images/4.jpg" width="28%" />
+</div>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Tech Stack
 
-## Get a fresh project
+- React Native  
+- Expo  
+- Convex Database  
+- React Navigation  
+- JavaScript (ES6+)  
 
-When you're ready, run:
+---
+
+## 📦 Installation
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone <your_repo_link>
+cd your_repo
+npm install
+npx expo start
